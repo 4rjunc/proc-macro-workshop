@@ -52,7 +52,7 @@ pub fn derive(input: TokenStream) -> TokenStream {
         }
     });
 
-    // Creating the instruction manual
+    // creating the instruction manual
     let expanded = quote! {
         impl #struct_name {
             pub fn builder() -> #builder_name {
